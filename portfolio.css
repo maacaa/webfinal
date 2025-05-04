@@ -1,0 +1,75 @@
+.marco-servicios {
+	background: url('burnwood.jpg');
+	background-repeat: repeat; /* Repite la imagen en ambas direcciones */
+	ackground-attachment: fixed;
+    background-size: auto;
+    padding: 0;
+	margin: 0	/* Espaciado alrededor del texto */
+    
+}
+
+.contacto {
+    background-image: url('Images1/backcontact.jpeg');
+    background-repeat: repeat; /* Repetir la imagen en ambas direcciones */
+    background-size: auto; /* Esto permite que la imagen se repita sin distorsión */
+    background-position: left top; /* Posiciona la imagen al inicio de la sección */
+    height: 100px; /* Asegúrate de darle altura al contenedor para ver la repetición */
+}
+
+.carrusel {
+	
+    position: relative;
+    width: 50%;  /* El ancho del carrusel */
+    margin: 50px auto;
+    overflow: hidden;  /* Oculta las imágenes que quedan fuera del carrusel */
+    border-radius: 0px;
+	background-color: rgb(5, 96, 137,0.9); /* Fondo blanco con opacidad */
+    padding: 3px; /* Espaciado alrededor del texto */
+    color:#fbeee6; /* Color del texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para hacer que el texto resalte más */
+
+}
+
+/* Contenedor de imágenes */
+.contenedor-imagenes {
+    display: flex;  /* Muestra las imágenes en fila */
+    transition: transform 3s ease;  /* Transición suave entre las imágenes */
+}
+
+/* Estilo para cada imagen */
+.foto {
+    width: 100%;  /* Las imágenes se ajustan al contenedor */
+    height: auto;
+    flex-shrink: 0;
+	object-fit: contain;
+	border: 20px solid #edbb99;  /* Borde de 5px */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra sutil alrededor de la imagen */
+; 	/* Evita que las imágenes se reduzcan de tamaño */
+}
+
+/* Estilo de los botones de navegación */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

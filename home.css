@@ -1,0 +1,390 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background: url('wood4.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  text-decoration: none;
+}
+
+.marco-servicios, .marco-pergola {
+  background: url('burnwood.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.contacto {
+  background-image: url('Images1/backcontact.jpeg');
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: left top;
+  height: 10vh;
+}
+
+.carrusel {
+  position: relative;
+  width: 80%;
+  margin: 5vh auto;
+  overflow: hidden;
+  border-radius: 0;
+  background-color: #fbeee6;
+  padding: 1vw;
+  color: #fbeee6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-imagenes {
+  display: flex;
+  transition: transform 3s ease;
+}
+
+.cards-container, .cards-pergola {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+  padding: 5vh 5vw;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+}
+
+.card {
+  background-color: #fbeee6;
+  color: black;
+  text-align: center;
+  padding: 2vh;
+  border-radius: 1vw;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card .icon {
+  font-size: 2.5em;
+  margin-bottom: 1vh;
+}
+
+.card h4, .card h5 {
+  font-size: 1.8em;
+  margin-bottom: 2vh;
+  font-style: italic;
+  text-align: center;
+}
+
+.card p {
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.foto {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+  border: 2vw solid #edbb99;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fbeee6;
+  padding: 2vh 2vw;
+  height: auto;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 10vh;
+  margin-right: 1vw;
+  padding: 0.5vw;
+}
+
+.navbar-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-left: 2vw;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-title small {
+  font-size: 0.8em;
+  display: block;
+  font-weight: normal;
+  margin-top: -4px;
+  margin-left: -30px;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 2vw;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  display: inline;
+}
+
+.navbar-menu a {
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.navbar-menu a:hover {
+  color: #40E0D0;
+}
+
+.servicios, .servicios-pergola {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+  padding: 2vh;
+}
+
+.tarjeta {
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  width: 80vw;
+  max-width: 300px;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.tarjeta-pergola {
+  width: 90vw;
+  max-width: 500px;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.imagen {
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.contenido {
+  padding: 2vh;
+  background: #fbeee6;
+}
+
+.icono {
+  font-size: 2em;
+  margin-bottom: 1vh;
+  color: white;
+}
+
+h3, h2, h5, h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 1vh;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 2vh;
+  font-weight: bold;
+  font-style: italic;
+}
+
+h5 {
+  font-size: 4em;
+  margin-bottom: 2vh;
+  font-weight: bold;
+  font-style: italic;
+}
+
+p, p1, p2, p3, a1 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+p1 {
+  font-size: 0.7em;
+}
+
+p2 {
+  font-size: 1.7em;
+  font-style: italic;
+}
+
+p3 {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+a1 {
+  font-size: 1.4em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.marco-texto {
+  background-color: rgba(5, 96, 137, 0.9);
+  padding: 3vh;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.iconos-redes {
+  margin-bottom: 1vh;
+}
+
+.iconos-redes i {
+  font-size: 24px;
+  margin-right: 15px;
+  color: #333;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.iconos-redes i:hover {
+  color: #007bff;
+}
+
+.tabla-servicios {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 3vh;
+}
+
+.tabla-servicios th,
+.tabla-servicios td {
+  border: 1px solid #ccc;
+  padding: 1.5vh;
+  text-align: center;
+}
+
+.tabla-servicios th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+}
+
+.tabla-servicios img {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.tabla-servicios a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.tabla-servicios a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------- RESPONSIVE NAVBAR ------------------- */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 2vh 2vw;
+  }
+
+  .navbar-logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-logo img {
+    height: 8vh;
+    margin: 0;
+  }
+
+  .navbar-title {
+    font-size: 1.3em;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .navbar-title small {
+    font-size: 0.7em;
+    margin-left: 0;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 1vh;
+  }
+
+  .navbar-menu a {
+    font-size: 1.1em;
+  }
+}
